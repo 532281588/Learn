@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <!--注意：chorme不支持wav音频 controls提供播放音量控件-->
+ <audio src="src/m1.mp3" controls="controls">
+     你的浏览器不支持音频
+ </audio>
+
+ <audio controls="controls">
+     <!--和h5视频同理，音频也可以连接多个-->
+     <source src="src/m1.mp3" type="audio/mp3">
+     <source src="src/m1.mp3" type="audio/mp3">
+     你的浏览器不支持音频
+ </audio>
+
+</body>
+
+</html>

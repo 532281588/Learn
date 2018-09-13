@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+        video标签的支持
+    格式	IE	Firefox	Opera	Chrome	Safari
+    Ogg	No	3.5+	10.5+	5.0+	No
+    MPEG 4	9.0+	No	No	5.0+	3.0+
+    WebM No	4.0+	10.6+	6.0+	No-->
+
+
+<!--属性	值	    描述-->
+<!--autoplay	autoplay	如果出现该属性，则视频在就绪后马上播放。-->
+<!--controls	controls	如果出现该属性，则向用户显示控件，比如播放按钮。-->
+<!--height	pixels	设置视频播放器的高度。-->
+<!--loop	loop	如果出现该属性，则当媒介文件完成播放后再次开始播放。-->
+<!--preload	preload-->
+<!--如果出现该属性，则视频在页面加载时进行加载，并预备播放。-->
+
+<!--如果使用 "autoplay"，则忽略该属性。-->
+
+<!--src	url	要播放的视频的 URL。-->
+<!--width	pixels	设置视频播放器的宽度。-->
+
+<!--contorls属性：添加播放、音量、暂停控件-->
+<video src="src/1.mp4" width="320" height="240" controls="controls">
+    <!--video元素允许多个source元素，可以连接不同的视频文件，浏览器使用第一个可以识别的格式-->
+    <source src="src/1.mp4 " type="video/ogg">
+    <source src="src/2.mp4" type="video/mp4">
+    <!--video标签中间的内容是不支持video的浏览器显示的-->
+    你的浏览器不支持播放视频
+
+</video>
+</body>
+</html>

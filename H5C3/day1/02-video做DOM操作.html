@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="text-align: center">
+        <button onclick="playPause()">播放/暂停</button>
+        <button onclick="makeBig()">大</button>
+        <button onclick="makeNormal()">正常</button>
+        <button onclick="makeSmall()">小</button>
+        <br/>
+        <!--添加视频-->
+        <video id="video1" width="220" style="margin-top: 15px">
+            <source src="src/1.mp4" type="video/mp4">
+            <source src="src/2.mp4" type="video/mp4">
+            你的浏览器不支持播放视频
+        </video>
+    </div>
+</body>
+<script>
+    //获得视频id
+    var myVideo = document.getElementById("video1");
+    //点击/暂停
+    function playPause() {
+        //如果视频处于暂停状态，那么点击后就是播放
+        if (myVideo.paused){
+            myVideo.play();
+        } else {
+            myVideo.pause();
+        };
+    };
+    function makeBig() {
+        myVideo.width=420;
+    };
+    function makeNormal() {
+        myVideo.width=320;
+    };
+    function makeSmall() {
+        myVideo.width=220;
+    };
+</script>
+
+</html>
